@@ -1,0 +1,57 @@
+import * as React from 'react';
+import * as PropTypes from 'prop-types';
+import { Text, View, Svg } from 'react-sketchapp';
+
+import ds from '../lib/designSystem';
+
+const Header = ({ name }) => (
+  <View
+    name="header"
+    style={{
+      width: '100%',
+      height: 128,
+      backgroundColor: ds.colors['Peach'],
+      justifyContent: 'space-between',
+      display: 'flex',
+      flexDirection: 'row'
+    }}>
+    <View
+      name="My Setlist Icon"
+      style={{
+        width: 16 * 8,
+        height: 16 * 8,
+        backgroundColor: ds.colors['Haus'],
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}>
+      <Svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 128 128">
+        <Svg.G id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <Svg.G id="Artboard" transform="translate(-141.000000, -104.000000)">
+            <Svg.G id="Group" transform="translate(141.000000, 104.000000)">
+              <Svg.Circle id="Oval" fill="#D8D8D8" cx="14" cy="14" r="14"></Svg.Circle>
+              <Svg.Polygon id="Path" points="2 1 26 1 26 25 2 25"></Svg.Polygon>
+              <Svg.G id="sharp-person-24px" transform="translate(2.000000, 1.000000)">
+                <Svg.Polygon id="Path" points="0 0 24 0 24 24 0 24"></Svg.Polygon>
+                <Svg.Path d="M12,12 C14.21,12 16,10.21 16,8 C16,5.79 14.21,4 12,4 C9.79,4 8,5.79 8,8 C8,10.21 9.79,12 12,12 Z M12,14 C9.33,14 4,15.34 4,18 L4,20 L20,20 L20,18 C20,15.34 14.67,14 12,14 Z" id="Shape" fill="#000000" fill-rule="nonzero"></Svg.Path>
+              </Svg.G>
+              <Svg.Path d="M18,11 L18,18.0333333 C17.6066667,17.8066667 17.1533333,17.6666667 16.6666667,17.6666667 C15.1933333,17.6666667 14,18.86 14,20.3333333 C14,21.8066667 15.1933333,23 16.6666667,23 C18.14,23 19.3333333,21.8066667 19.3333333,20.3333333 L19.3333333,13.6666667 L22,13.6666667 L22,11 L18,11 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></Svg.Path>
+              <Svg.Path d="M18.75,12 L18.75,18.59375 C18.38125,18.38125 17.95625,18.25 17.5,18.25 C16.11875,18.25 15,19.36875 15,20.75 C15,22.13125 16.11875,23.25 17.5,23.25 C18.88125,23.25 20,22.13125 20,20.75 L20,14.5 L22.5,14.5 L22.5,12 L18.75,12 Z" id="Path" fill="#444444" fill-rule="nonzero"></Svg.Path>
+            </Svg.G>
+          </Svg.G>
+        </Svg.G>
+      </Svg>
+    </View>
+    <View
+      name="My Setlist Icon"
+      style={{
+        width: 16 * 8,
+        height: 16 * 8,
+        backgroundColor: ds.colors['Night']
+      }}>
+    </View>
+  </View>
+);
+
+export default Header;
+
