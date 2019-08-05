@@ -17,7 +17,7 @@ const AddSongContainer = ({ name, children }) => (
     )}
   >
     {Object.keys(ds.icons.svg).map(icon => (
-      <View key={icon['name']}
+      <View key={ds.icons.svg[icon].title}
         name="create-new-icon"
         style={Object.assign(
           {},
