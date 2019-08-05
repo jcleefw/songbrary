@@ -11,7 +11,7 @@ import ds from './lib/designSystem';
 
 const Document = ({ colors }) => (
   <Page>
-    {/* <AddSongContainer name="add-song-container" /> */}
+    <AddSongContainer name="add-song-container" />
     <IpadArtboard name="ipad artboard" >
       <Header name="header container" />
     </IpadArtboard>
