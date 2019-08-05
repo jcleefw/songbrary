@@ -1,16 +1,25 @@
 import * as React from 'react';
-import * as PropTypes from 'prop-types';
-import { Text, View, Artboard } from 'react-sketchapp';
+import { Artboard } from 'react-sketchapp';
 
-const IpadArtboard = ({ name, children }) => (
+import ds from '../lib/designSystem';
+
+const IpadArtboard = ({ name, backgroundColor, children }) => (
   <Artboard
     name={name}
-    style={{
-      width: 768,
-      height: 1024,
-      marginBottom: 50,
-      padding: 0
-    }}
+
+    style={Object.assign(
+      {},
+      ds.flexAlignment['spaceBetween'],
+      {
+        width: 768,
+        height: 1024,
+        marginBottom: 50,
+        padding: 0,
+        backgroundColor: backgroundColor,
+        flexDirection: 'column',
+      }
+    )}
+
   >
     {children}
   </Artboard>

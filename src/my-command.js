@@ -5,16 +5,15 @@ import { render, Artboard, Page, View, Image } from 'react-sketchapp';
 
 import Swatch from './components/Swatch';
 import AddSongContainer from './components/AddSongContainer';
-import IpadArtboard from './components/IpadArtBoard';
-import Header from './components/Header';
+import Layoutv1 from './version/Layoutv1';
+import Layoutv2 from './version/Layoutv2';
 import ds from './lib/designSystem';
 
 const Document = ({ colors }) => (
   <Page>
     <AddSongContainer name="add-song-container" />
-    <IpadArtboard name="ipad artboard" >
-      <Header name="header container" />
-    </IpadArtboard>
+    <Layoutv1 />
+    <Layoutv2 />
 
     <Artboard
       name="Swatches"

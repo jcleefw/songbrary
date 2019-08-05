@@ -21,20 +21,11 @@ const Header = ({ name }) => (
       style={{
         width: 16 * 8,
         height: 16 * 8,
-        backgroundColor: ds.colors['Haus'],
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
       }}>
       {ds.icons.renderer(80, 80, ds.icons.svg['setlistIcon'].svg)}
-    </View>
-    <View
-      name="My Setlist Icon"
-      style={{
-        width: 16 * 8,
-        height: 16 * 8,
-        backgroundColor: ds.colors['Night']
-      }}>
     </View>
   </View>
 );
