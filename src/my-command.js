@@ -4,15 +4,18 @@ import * as PropTypes from 'prop-types';
 import { render, Artboard, Page, View, Image } from 'react-sketchapp';
 
 import Swatch from './components/Swatch';
+import AddSongContainer from './components/AddSongContainer';
 import IpadArtboard from './components/IpadArtBoard';
 import Header from './components/Header';
 import ds from './lib/designSystem';
 
 const Document = ({ colors }) => (
   <Page>
+    {/* <AddSongContainer name="add-song-container" /> */}
     <IpadArtboard name="ipad artboard" >
       <Header name="header container" />
     </IpadArtboard>
+
     <Artboard
       name="Swatches"
       style={{
