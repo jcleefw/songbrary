@@ -3,30 +3,17 @@ import { View } from 'react-sketchapp';
 
 import ds from '../lib/designSystem';
 
-const Header = ({ name }) => (
+const Header = ({ name, children }) => (
   <View
-    name="header"
-    style={Object.assign(
-      {},
-      ds.flexAlignment['spaceBetween'],
-      {
-        width: '100%',
-        height: 128,
-        backgroundColor: ds.colors['Peach'],
-      }
-    )}
+    name={name}
+    style={ds.styled.header}
   >
     <View
       name="My Setlist Icon"
-      style={{
-        width: 16 * 8,
-        height: 16 * 8,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}>
+      style={ds.styled.headerIcon}>
       {ds.icons.renderer(80, 80, ds.icons.svg['setlistIcon'].svg)}
     </View>
+    {children}
   </View>
 );
 

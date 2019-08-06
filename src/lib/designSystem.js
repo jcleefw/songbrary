@@ -1,4 +1,5 @@
 import icons from './icons';
+import { StyleSheet } from 'react-sketchapp';
 
 export const colors = {
   Haus: '#F3F4F4',
@@ -27,8 +28,63 @@ export const flexAlignment = {
   }
 }
 
+export const styled = StyleSheet.create({
+  primaryButton: Object.assign(
+    {},
+    flexAlignment['centered'],
+    {
+      width: '80%',
+      height: '64',
+      backgroundColor: colors['Pear'],
+    }
+  ),
+  primaryButtonText: {
+    fontSize: '24',
+    width: '100%',
+    textAlign: 'center',
+    textTransform: 'uppercase',
+    fontWeight: 'bold'
+  },
+  headerButton: {
+    width: '50%',
+    height: 16 * 6,
+    backgroundColor: colors['Light Grey'],
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  headerButtonText: {
+    color: colors['Night'],
+    textAlign: 'center',
+    fontSize: 32,
+    textTransform: 'uppercase',
+    fontWeight: 'bold',
+    width: '100%',
+  },
+  header: {
+    width: '100%',
+    height: 128,
+    backgroundColor: colors['Peach'],
+    justifyContent: 'space-between',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingRight: 16,
+  },
+  headerIcon: Object.assign(
+    {},
+    flexAlignment['centered'],
+    {
+      width: 16 * 8,
+      height: 16 * 8,
+    }
+  )
+})
+
 export default {
   colors,
   flexAlignment,
-  icons
+  icons,
+  styled
 }

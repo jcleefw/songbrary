@@ -13,24 +13,10 @@ const Footer = ({ name }) => (
   >
     <View
       name="New Setlist button"
-      style={Object.assign(
-        {},
-        ds.flexAlignment['centered'],
-        {
-          width: '80%',
-          height: '64',
-          backgroundColor: ds.colors['Pear'],
-        }
-      )}
+      style={ds.styled.primaryButton}
     >
       <Text
-        style={{
-          fontSize: '24',
-          width: '100%',
-          textAlign: 'center',
-          textTransform: 'uppercase',
-          fontWeight: 'bold'
-        }}
+        style={ds.styled.primaryButtonText}
       >
         New Setlist</Text>
     </View>
