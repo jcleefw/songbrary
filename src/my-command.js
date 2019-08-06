@@ -5,8 +5,8 @@ import { render, Artboard, Page, View, Image } from 'react-sketchapp';
 
 import Swatch from './components/Swatch';
 import AddSongContainer from './components/AddSongContainer';
-import Layoutv1 from './version/Layoutv1';
-import Layoutv2 from './version/Layoutv2';
+import Layoutv1 from './pages/landing/Layoutv1';
+import Layoutv2 from './pages/landing/Layoutv2';
 import ds from './lib/designSystem';
 
 const Document = ({ colors }) => (
