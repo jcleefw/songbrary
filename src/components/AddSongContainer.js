@@ -4,8 +4,10 @@ import { Text, View, Svg } from 'react-sketchapp';
 
 import ds from '../lib/designSystem';
 
-const AddSongContainer = ({ name, children }) => (
-  <View
+const AddSongContainer = ({ name, children }) => {
+  let icons = ds.icons.svg
+  let addSongsIcons = [icons.createNew, icons.identifySong, icons.captureImage]
+  return (<View
     name={name}
     style={Object.assign(
       {},
@@ -16,9 +18,9 @@ const AddSongContainer = ({ name, children }) => (
       }
     )}
   >
-    {Object.keys(ds.icons.svg).map(icon => (
-      <View key={ds.icons.svg[icon].title}
-        name="create-new-icon"
+    {addSongsIcons.map(icon => (
+      <View key={icon.title}
+        name={`${icon.key}`}
         style={Object.assign(
           {},
           ds.flexAlignment['centered'],
@@ -42,12 +44,13 @@ const AddSongContainer = ({ name, children }) => (
             }
           )}
         >
-          {ds.icons.renderer(100, 100, ds.icons.svg[icon].svg)}
+          {ds.icons.renderer(100, 100, icon.svg)}
         </View>
-        <Text>{ds.icons.svg[icon].title}</Text>
+        <Text>{icon.title}</Text>
       </View>
     ))}
   </View>
-);
+  )
+};
 
 export default AddSongContainer;
