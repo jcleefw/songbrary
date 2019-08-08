@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-sketchapp';
 
 export const colors = {
   Haus: '#F3F4F4',
+  'Light Grey': '#D8D8D8',
   Night: '#333',
   Sur: '#96DBE4',
   'Sur Dark': '#24828F',
@@ -10,7 +11,8 @@ export const colors = {
   'Peach Dark': '#E37059',
   Pear: '#93DAAB',
   'Pear Dark': '#2E854B',
-  'Light Grey': '#D8D8D8',
+  White: '#FFFFFF'
+
 };
 
 export const flexAlignment = {
@@ -28,7 +30,14 @@ export const flexAlignment = {
   }
 }
 
+export const globalStyle = {
+  fullWidth: {
+    width: '100%'
+  }
+}
+
 export const styled = StyleSheet.create({
+
   primaryButton: Object.assign(
     {},
     flexAlignment['centered'],
@@ -40,7 +49,7 @@ export const styled = StyleSheet.create({
   ),
   primaryButtonText: {
     fontSize: '24',
-    width: '100%',
+
     textAlign: 'center',
     textTransform: 'uppercase',
     fontWeight: 'bold'
@@ -79,12 +88,21 @@ export const styled = StyleSheet.create({
       width: 16 * 8,
       height: 16 * 8,
     }
-  )
+  ),
+  backHeader: Object.assign(
+    {},
+    flexAlignment['space-between'],
+    globalStyle.fullWidth,
+    {
+      alignItems: 'flex-start',
+    }
+  ),
 })
 
 export default {
   colors,
   flexAlignment,
   icons,
+  globalStyle,
   styled
 }

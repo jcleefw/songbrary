@@ -7,11 +7,13 @@ import Swatch from './components/Swatch';
 import AddSongContainer from './components/AddSongContainer';
 import Layoutv1 from './pages/landing/Layoutv1';
 import Layoutv2 from './pages/landing/Layoutv2';
+import Setlist from './pages/Setlist';
 import ds from './lib/designSystem';
 
 const Document = ({ colors }) => (
   <Page>
     <AddSongContainer name="add-song-container" />
+    <Setlist setlist="setlist" />
     <Layoutv1 />
     <Layoutv2 />
 

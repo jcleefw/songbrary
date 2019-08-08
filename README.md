@@ -70,3 +70,18 @@ skpm log
 ```
 
 The `-f` option causes `skpm log` to not stop when the end of logs is reached, but rather to wait for additional data to be appended to the input
+
+
+cheatsheet
+```
+style = {Object.assign(
+  {},
+  ds.flexAlignment['spaceBetween'],
+  {}
+)}
+```
+
+```
+style = {ds.styled.xxxx}
+```
+
