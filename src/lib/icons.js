@@ -66,6 +66,19 @@ export const svg = {
       </Svg.G>
     </Svg.G>,
     title: 'SetList'
+  },
+  'backIcon': {
+    svg: <Svg.G id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      < Svg.G id="Artboard" transform="translate(-249.000000, -169.000000)" fill- rule="nonzero">
+        <Svg.G id="mdi-chevron-left" transform="translate(241.000000, 163.000000)">
+          <Svg.G id="Icon" fill="#E37059">
+            <Svg.Polygon id="Icon-Path" points="15.414 16.584 10.828 11.998 15.414 7.412 13.999 5.998 7.999 11.998 13.999 17.998 15.414 16.584"></Svg.Polygon>
+          </Svg.G>
+          <Svg.Rect id="ViewBox" x="0" y="0" width="24" height="24"></Svg.Rect>
+        </Svg.G>
+      </Svg.G >
+    </Svg.G >,
+    title: 'Back Icon'
   }
 }
 
