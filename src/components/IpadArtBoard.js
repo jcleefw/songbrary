@@ -14,6 +14,7 @@ const IpadArtboard = ({ name, backgroundColor, children }) => (
         width: 768,
         height: 1024,
         marginBottom: 50,
+        marginTop: 50,
         padding: 0,
         backgroundColor: backgroundColor,
         flexDirection: 'column',
